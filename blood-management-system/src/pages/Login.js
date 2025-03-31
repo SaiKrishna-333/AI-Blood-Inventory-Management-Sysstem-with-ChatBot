@@ -7,7 +7,7 @@ const Login = () => {
     email: '',
     password: '',
   });
-  
+
   const { login, error } = useAuth();
   const navigate = useNavigate();
 
@@ -18,14 +18,15 @@ const Login = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+    const handleSubmit = async (e) => {
     e.preventDefault();
-    const success = await login(formData.email, formData.password);
+    const success = await login(formData.email, formData.password); // Call the login function
     if (success) {
-      navigate('/dashboard');
+      navigate('/dashboard'); // Redirect to the dashboard if login is successful
+    } else {
+      console.error('Login failed'); // Log an error if login fails
     }
   };
-
   return (
     <div>
       <nav className="nav-container">
@@ -37,12 +38,12 @@ const Login = () => {
       <div className="container">
         <div className="form-container">
           <h2 className="form-title">Welcome Back</h2>
-          
+
           <form onSubmit={handleSubmit}>
             {error && (
               <div className="error-message">{error}</div>
             )}
-            
+
             <div className="form-group">
               <label htmlFor="email" className="form-label">
                 Email Address
