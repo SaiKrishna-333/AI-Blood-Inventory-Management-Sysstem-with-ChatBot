@@ -1,0 +1,243 @@
+{
+  "hospitals": [
+    {
+      "id": "1",
+      "name": "City General Hospital",
+      "email": "city.general@example.com",
+      "address": "123 Main Street",
+      "contact": "+91 9876543210",
+      "location": {
+        "coordinates": {
+          "latitude": 12.9716,
+          "longitude": 77.5946
+        },
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560001"
+      },
+      "bloodInventory": {
+        "A+": { "units": 50, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 50 },
+        "A-": { "units": 20, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 30 },
+        "B+": { "units": 45, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 50 },
+        "B-": { "units": 15, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 30 },
+        "AB+": { "units": 25, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 30 },
+        "AB-": { "units": 10, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 20 },
+        "O+": { "units": 60, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 60 },
+        "O-": { "units": 30, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 40 }
+      },
+      "bloodBankLicense": "BBL123456",
+      "rating": 4.5,
+      "operatingHours": {
+        "monday": { "open": "09:00", "close": "18:00" },
+        "tuesday": { "open": "09:00", "close": "18:00" },
+        "wednesday": { "open": "09:00", "close": "18:00" },
+        "thursday": { "open": "09:00", "close": "18:00" },
+        "friday": { "open": "09:00", "close": "18:00" },
+        "saturday": { "open": "09:00", "close": "14:00" },
+        "sunday": { "open": "10:00", "close": "13:00" }
+      },
+      "facilities": ["24/7 Emergency", "Blood Component Separation", "Platelet Storage"],
+      "certifications": ["ISO 9001:2015", "NABH Accredited"]
+    },
+    {
+      "id": "2",
+      "name": "Apollo Hospital",
+      "email": "apollo@example.com",
+      "address": "456 Hospital Road",
+      "contact": "+91 9876543211",
+      "location": {
+        "coordinates": {
+          "latitude": 12.9516,
+          "longitude": 77.5846
+        },
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560002"
+      },
+      "bloodInventory": {
+        "A+": { "units": 40, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 50 },
+        "A-": { "units": 15, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 30 },
+        "B+": { "units": 35, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 50 },
+        "B-": { "units": 12, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 30 },
+        "AB+": { "units": 20, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 30 },
+        "AB-": { "units": 8, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 20 },
+        "O+": { "units": 50, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 60 },
+        "O-": { "units": 25, "lastUpdated": "2025-03-30T10:00:00Z", "criticalLevel": 10, "optimalLevel": 40 }
+      },
+      "bloodBankLicense": "BBL123457",
+      "rating": 4.8,
+      "operatingHours": {
+        "monday": { "open": "00:00", "close": "23:59" },
+        "tuesday": { "open": "00:00", "close": "23:59" },
+        "wednesday": { "open": "00:00", "close": "23:59" },
+        "thursday": { "open": "00:00", "close": "23:59" },
+        "friday": { "open": "00:00", "close": "23:59" },
+        "saturday": { "open": "00:00", "close": "23:59" },
+        "sunday": { "open": "00:00", "close": "23:59" }
+      },
+      "facilities": ["24/7 Emergency", "Blood Component Separation", "Platelet Storage", "Stem Cell Storage"],
+      "certifications": ["ISO 9001:2015", "NABH Accredited", "JCI Accredited"]
+    }
+  ],
+  "donors": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "bloodType": "O+",
+      "age": 28,
+      "gender": "male",
+      "contact": "+91 9876543220",
+      "address": {
+        "street": "789 Donor Street",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560001"
+      },
+      "lastDonation": "2025-02-15",
+      "donationHistory": [
+        {
+          "date": "2025-02-15",
+          "hospital": "City General Hospital",
+          "units": 1,
+          "type": "whole blood"
+        }
+      ],
+      "medicalHistory": {
+        "conditions": [],
+        "medications": [],
+        "eligibleToDonate": true,
+        "lastCheckup": "2025-02-01"
+      },
+      "rewards": {
+        "points": 100,
+        "level": "silver",
+        "donationsCount": 3
+      }
+    }
+  ],
+  "camps": [
+    {
+      "id": "1",
+      "name": "Community Blood Drive",
+      "address": "789 Park Avenue",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "date": "2025-04-15",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "organizer": "Red Cross Society",
+      "contact": "+91 9876543212",
+      "registrationLink": "https://example.com/camp1",
+      "targetUnits": 100,
+      "currentRegistrations": 45,
+      "facilities": ["Free Health Checkup", "Refreshments", "Certificate"],
+      "sponsors": ["ABC Corp", "XYZ Healthcare"]
+    },
+    {
+      "id": "2",
+      "name": "Corporate Blood Donation Camp",
+      "address": "321 Tech Park",
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "date": "2025-04-20",
+      "startTime": "10:00",
+      "endTime": "16:00",
+      "organizer": "TechCorp India",
+      "contact": "+91 9876543213",
+      "registrationLink": "https://example.com/camp2",
+      "targetUnits": 50,
+      "currentRegistrations": 30,
+      "facilities": ["Free Health Checkup", "Refreshments", "Transport"],
+      "sponsors": ["TechCorp", "Local NGO"]
+    }
+  ],
+  "bloodRequests": [
+    {
+      "id": "1",
+      "patientName": "John Doe",
+      "bloodType": "A+",
+      "unitsRequired": 2,
+      "hospital": "City General Hospital",
+      "urgency": "high",
+      "status": "pending",
+      "contactPerson": "Jane Doe",
+      "contactNumber": "+91 9876543214",
+      "createdAt": "2025-03-30T09:00:00Z",
+      "requiredBy": "2025-03-31T09:00:00Z",
+      "purpose": "Surgery",
+      "patientAge": 45,
+      "patientGender": "male",
+      "medicalCondition": "Scheduled Surgery"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "permissions": ["manage_hospitals", "manage_camps", "view_reports"]
+    },
+    {
+      "id": "2",
+      "name": "Hospital Staff",
+      "email": "staff@citygeneral.com",
+      "password": "staff123",
+      "role": "hospital_staff",
+      "hospitalId": "1",
+      "permissions": ["manage_inventory", "handle_requests"]
+    },
+    {
+      "id": "3",
+      "name": "Donor User",
+      "email": "donor@example.com",
+      "password": "donor123",
+      "role": "donor",
+      "donorId": "1",
+      "permissions": ["view_camps", "book_appointments"]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "type": "URGENT_REQUEST",
+      "title": "Urgent A+ Blood Required",
+      "message": "2 units of A+ blood required urgently at City General Hospital",
+      "priority": "high",
+      "targetUsers": ["all_donors_a_positive"],
+      "createdAt": "2025-03-30T09:00:00Z",
+      "expiresAt": "2025-03-31T09:00:00Z",
+      "status": "active"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "donorId": "1",
+      "hospitalId": "1",
+      "date": "2025-04-01",
+      "time": "10:00",
+      "status": "confirmed",
+      "type": "blood_donation",
+      "preScreeningCompleted": false,
+      "notes": "Regular donation appointment"
+    }
+  ],
+  "reports": [
+    {
+      "id": "1",
+      "type": "monthly_inventory",
+      "hospitalId": "1",
+      "period": "2025-03",
+      "data": {
+        "totalDonations": 145,
+        "totalRequests": 132,
+        "shortages": ["AB-", "O-"],
+        "excessInventory": ["A+", "B+"]
+      },
+      "generatedAt": "2025-03-30T00:00:00Z"
+    }
+  ]
+}
